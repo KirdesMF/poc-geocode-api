@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { hereQuery } from '@/api/queries';
+import { DEFAULT_DEBOUNCE_TIME, DEFAULT_LANGUAGE, DEFAULT_LIMIT } from '@/lib/constantes';
 import { Combobox, createListCollection } from '@ark-ui/vue';
 import { useQuery } from '@tanstack/vue-query';
 import { useDebounce, useStorage } from '@vueuse/core';
@@ -7,9 +8,11 @@ import { computed, ref } from 'vue';
 
 const query = ref('');
 
-const language = useStorage('language', ['']);
-const debouncedQuery = useDebounce(query, 1500);
-const { data, isFetching } = useQuery(hereQuery({ query: debouncedQuery, language, limit: 6 }));
+const language = useStorage('language', [DEFAULT_LANGUAGE]);
+const debouncedQuery = useDebounce(query, DEFAULT_DEBOUNCE_TIME);
+const { data, isFetching } = useQuery(
+  hereQuery({ query: debouncedQuery, language, limit: DEFAULT_LIMIT }),
+);
 
 const collection = computed(() =>
   createListCollection({

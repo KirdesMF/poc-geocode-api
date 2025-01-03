@@ -48,7 +48,7 @@ pnpm lint
 
 ### TODO
 
-- [ ] combobox
+- [✓] combobox
 - [ ] google places api current pricing
 - [ ] list of available languages per api
 - [ ] rate limit per api
@@ -57,7 +57,5 @@ pnpm lint
 - [ ] links to documentation per api
 - [ ] links to pricing per api
 - [ ] list current queries per api
-- [ ] selected address code preview
-- [ ] table of comparison
 - [ ] section for why not openstreetmap and woosmap
 - [ ] list current languages of our app

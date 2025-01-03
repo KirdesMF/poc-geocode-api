@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { mapboxQuery } from '@/api/queries';
+import { DEFAULT_DEBOUNCE_TIME, DEFAULT_LANGUAGE, DEFAULT_LIMIT } from '@/lib/constantes';
 import { Combobox, createListCollection } from '@ark-ui/vue';
 import { useQuery } from '@tanstack/vue-query';
 import { useDebounce, useStorage } from '@vueuse/core';
@@ -7,9 +8,11 @@ import { computed, ref } from 'vue';
 
 const query = ref('');
 
-const debouncedQuery = useDebounce(query, 1500);
-const language = useStorage('language', ['']);
-const { data, isFetching } = useQuery(mapboxQuery({ query: debouncedQuery, language, limit: 6 }));
+const debouncedQuery = useDebounce(query, DEFAULT_DEBOUNCE_TIME);
+const language = useStorage('language', [DEFAULT_LANGUAGE]);
+const { data, isFetching } = useQuery(
+  mapboxQuery({ query: debouncedQuery, language, limit: DEFAULT_LIMIT }),
+);
 
 const collection = computed(() =>
   createListCollection({
