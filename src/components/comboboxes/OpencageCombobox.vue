@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { opencageQuery } from '@/api/queries';
-import { DEFAULT_DEBOUNCE_TIME, DEFAULT_LANGUAGE, DEFAULT_LIMIT } from '@/lib/constantes';
+import { DEFAULT_DEBOUNCE_TIME, DEFAULT_LANGUAGE, DEFAULT_LIMIT } from '@/constantes';
 import { Combobox, createListCollection } from '@ark-ui/vue';
 import { useQuery } from '@tanstack/vue-query';
 import { useDebounce, useStorage } from '@vueuse/core';
 import { computed, ref } from 'vue';
+import { Loader, Search } from 'lucide-vue-next';
 
 const query = ref('');
 
@@ -29,14 +30,22 @@ function handleInputChange(details: Combobox.InputValueChangeDetails) {
 
 <template>
   <Combobox.Root :collection="collection" @input-value-change="handleInputChange">
-    <Combobox.Control class="w-96 p-2 border border-gray-200 rounded-md">
-      <Combobox.Input class="w-full outline-none" placeholder="Search address" />
+    <Combobox.Control class="w-full p-2 border border-gray-200 rounded-md flex items-center gap-2">
+      <Search class="w-4 h-4" />
+      <Combobox.Input
+        class="w-full outline-none placeholder:text-sm"
+        placeholder="Search address"
+      />
+      <Loader v-if="isFetching" class="w-4 h-4 animate-spin" />
     </Combobox.Control>
 
     <Teleport to="body">
       <Combobox.Positioner>
         <Combobox.Content
-          class="w-96 max-h-[220px] overflow-y-auto border border-gray-200 rounded-md bg-white"
+          :class="[
+            'w-full max-h-[220px] overflow-y-auto rounded-md bg-white shadow-md',
+            data && 'border-gray-200 border',
+          ]"
         >
           <div v-if="isFetching">Loading...</div>
           <Combobox.ItemGroup>
