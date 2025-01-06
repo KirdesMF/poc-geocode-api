@@ -52,11 +52,11 @@ pnpm lint
 - [✓] combobox
 - [ ] google places api current pricing
 - [ ] list of available languages per api
-- [ ] rate limit per api
-- [ ] pricing per api
-- [ ] feature types per api (place, address, etc)
-- [ ] links to documentation per api
-- [ ] links to pricing per api
+- [✓] rate limit per api
+- [✓] pricing per api
+- [✓] feature types per api (place, address, etc)
+- [✓] links to documentation per api
+- [✓] links to pricing per api
 - [ ] list current queries per api
 - [ ] section for why not openstreetmap and woosmap
 - [ ] list current languages of our app

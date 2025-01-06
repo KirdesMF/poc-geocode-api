@@ -25,7 +25,7 @@ import HereLogo from '@/components/logos/HereLogo.vue';
       <p>Pricing is based on 250k requests per month.</p>
     </section>
 
-    <section class="flex flex-col gap-4">
+    <section class="flex flex-col gap-4 w-[min(100%,450px)]">
       <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
         Mapbox
         <MapboxLogo class="w-6 h-6" />
@@ -58,7 +58,7 @@ import HereLogo from '@/components/logos/HereLogo.vue';
 
     <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
 
-    <section class="flex flex-col gap-4">
+    <section class="flex flex-col gap-4 w-[min(100%,450px)]">
       <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
         Radar
         <RadarLogo class="w-6 h-6" />
@@ -91,7 +91,7 @@ import HereLogo from '@/components/logos/HereLogo.vue';
 
     <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
 
-    <section class="flex flex-col gap-4">
+    <section class="flex flex-col gap-4 w-[min(100%,450px)]">
       <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
         Maptiler
         <MaptilerLogo class="w-6 h-6" />
@@ -124,7 +124,7 @@ import HereLogo from '@/components/logos/HereLogo.vue';
 
     <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
 
-    <section class="flex flex-col gap-4">
+    <section class="flex flex-col gap-4 w-[min(100%,450px)]">
       <h2 class="text-2xl font-bold text-center">Opencage</h2>
 
       <CallOut>
@@ -154,7 +154,7 @@ import HereLogo from '@/components/logos/HereLogo.vue';
 
     <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
 
-    <section class="flex flex-col gap-4">
+    <section class="flex flex-col gap-4 w-[min(100%,450px)]">
       <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
         Here
         <HereLogo class="w-6 h-6" />
