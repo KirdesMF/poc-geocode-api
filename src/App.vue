@@ -1,12 +1,16 @@
 <script setup lang="ts">
+import { DATA } from '@/data';
 import HereCombobox from '@/components/comboboxes/HereCombobox.vue';
 import MapboxCombobox from '@/components/comboboxes/MapboxCombobox.vue';
 import MaptilerCombobox from '@/components/comboboxes/MaptilerCombobox.vue';
 import OpencageCombobox from '@/components/comboboxes/OpencageCombobox.vue';
 import RadarCombobox from '@/components/comboboxes/RadarCombobox.vue';
 import SelectLanguage from '@/components/SelectLanguage.vue';
-import { DATA } from '@/data';
 import CallOut from '@/components/CallOut.vue';
+import MapboxLogo from '@/components/logos/MapboxLogo.vue';
+import RadarLogo from '@/components/logos/RadarLogo.vue';
+import MaptilerLogo from '@/components/logos/MaptilerLogo.vue';
+import HereLogo from '@/components/logos/HereLogo.vue';
 </script>
 
 <template>
@@ -17,12 +21,15 @@ import CallOut from '@/components/CallOut.vue';
   <main class="p-4 flex flex-col items-center gap-8 py-12 max-w-320 mx-auto">
     <h1 class="sr-only text-4xl font-bold">Geocoding API POC</h1>
 
-    <section>
+    <section class="mb-8">
       <p>Pricing is based on 250k requests per month.</p>
     </section>
 
     <section class="flex flex-col gap-4">
-      <h2 class="text-2xl font-bold text-center">Search Mapbox</h2>
+      <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
+        Mapbox
+        <MapboxLogo class="w-6 h-6" />
+      </h2>
 
       <CallOut>
         <ul>
@@ -52,7 +59,10 @@ import CallOut from '@/components/CallOut.vue';
     <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
 
     <section class="flex flex-col gap-4">
-      <h2 class="text-2xl font-bold text-center">Search Radar</h2>
+      <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
+        Radar
+        <RadarLogo class="w-6 h-6" />
+      </h2>
 
       <CallOut>
         <ul>
@@ -82,7 +92,10 @@ import CallOut from '@/components/CallOut.vue';
     <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
 
     <section class="flex flex-col gap-4">
-      <h2 class="text-2xl font-bold text-center">Search Maptiler</h2>
+      <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
+        Maptiler
+        <MaptilerLogo class="w-6 h-6" />
+      </h2>
 
       <CallOut>
         <ul>
@@ -112,7 +125,7 @@ import CallOut from '@/components/CallOut.vue';
     <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
 
     <section class="flex flex-col gap-4">
-      <h2 class="text-2xl font-bold text-center">Search Opencage</h2>
+      <h2 class="text-2xl font-bold text-center">Opencage</h2>
 
       <CallOut>
         <ul>
@@ -142,7 +155,10 @@ import CallOut from '@/components/CallOut.vue';
     <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
 
     <section class="flex flex-col gap-4">
-      <h2 class="text-2xl font-bold text-center">Search Here</h2>
+      <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
+        Here
+        <HereLogo class="w-6 h-6" />
+      </h2>
 
       <CallOut>
         <ul>

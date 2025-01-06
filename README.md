@@ -48,6 +48,7 @@ pnpm lint
 
 ### TODO
 
+- [ ] point of the poc
 - [✓] combobox
 - [ ] google places api current pricing
 - [ ] list of available languages per api
