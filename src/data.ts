@@ -6,21 +6,18 @@ const mapbox = {
       label: 'Feature types',
       value: ['address', 'place'],
     },
-    { label: 'Languages', value: '100' },
   ],
   links: [
     { label: 'Documentation', url: 'https://docs.mapbox.com/api/search/geocoding/' },
     { label: 'Pricing', url: 'https://www.mapbox.com/pricing/' },
-    { label: 'Languages', url: 'https://www.mapbox.com/pricing/' },
   ],
 };
 
 const radar = {
   infos: [
-    { label: 'Pricing', value: '$1000/month for 250k requests/month' },
+    { label: 'Pricing', value: 'Contact sales' },
     { label: 'Rate limit', value: '40 requests per second' },
     { label: 'Feature types', value: ['address', 'place'] },
-    { label: 'Languages', value: '100' },
   ],
   links: [
     { label: 'Documentation', url: 'https://radar.com/documentation/api#geocoding' },
@@ -30,23 +27,21 @@ const radar = {
 
 const maptiler = {
   infos: [
-    { label: 'Pricing', value: '$1000/month for 250k requests/month' },
-    { label: 'Rate limit', value: '40 requests per second' },
+    { label: 'Pricing', value: '$25/month for 250k requests/month' },
+    { label: 'Rate limit', value: 'check documentation' },
     { label: 'Feature types', value: ['address', 'place'] },
-    { label: 'Languages', value: '100' },
   ],
   links: [
     { label: 'Documentation', url: 'https://docs.maptiler.com/cloud/api/geocoding/' },
-    { label: 'Pricing', url: 'https://www.maptiler.com/pricing/' },
+    { label: 'Pricing', url: 'https://www.maptiler.com/cloud/pricing/' },
   ],
 };
 
 const opencage = {
   infos: [
-    { label: 'Pricing', value: '$1000/month for 250k requests/month' },
-    { label: 'Rate limit', value: '40 requests per second' },
+    { label: 'Pricing', value: 'check pricing page' },
+    { label: 'Rate limit', value: 'check documentation' },
     { label: 'Feature types', value: ['address', 'place'] },
-    { label: 'Languages', value: '100' },
   ],
   links: [
     { label: 'Documentation', url: 'https://opencagedata.com/api' },
@@ -56,10 +51,9 @@ const opencage = {
 
 const here = {
   infos: [
-    { label: 'Pricing', value: '$1000/month for 250k requests/month' },
-    { label: 'Rate limit', value: '40 requests per second' },
+    { label: 'Pricing', value: '$145/month for 250k requests/month' },
+    { label: 'Rate limit', value: 'check documentation' },
     { label: 'Feature types', value: ['address', 'place'] },
-    { label: 'Languages', value: '100' },
   ],
   links: [
     {
