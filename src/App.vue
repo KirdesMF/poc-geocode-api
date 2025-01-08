@@ -21,9 +21,9 @@ import HereLogo from '@/components/logos/HereLogo.vue';
   <main class="p-4 flex flex-col items-center gap-8 py-12 max-w-320 mx-auto">
     <h1 class="sr-only text-4xl font-bold">Geocoding API POC</h1>
 
-    <section class="mb-8">
+    <!-- <section class="mb-8">
       <p>Pricing is based on 250k requests per month.</p>
-    </section>
+    </section> -->
 
     <section class="flex flex-col gap-4 w-[min(100%,450px)]">
       <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
@@ -56,7 +56,7 @@ import HereLogo from '@/components/logos/HereLogo.vue';
       <MapboxCombobox />
     </section>
 
-    <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
+    <!-- <div role="separator" aria-orientation="horizontal" class="w-144 h-px bg-gray-200" />
 
     <section class="flex flex-col gap-4 w-[min(100%,450px)]">
       <h2 class="text-2xl font-bold justify-center flex items-center gap-2">
@@ -183,6 +183,6 @@ import HereLogo from '@/components/logos/HereLogo.vue';
       </CallOut>
 
       <HereCombobox />
-    </section>
+    </section> -->
   </main>
 </template>
